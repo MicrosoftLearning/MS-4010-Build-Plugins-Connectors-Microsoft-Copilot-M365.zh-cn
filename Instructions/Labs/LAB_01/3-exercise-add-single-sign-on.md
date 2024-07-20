@@ -20,7 +20,7 @@ lab:
     ```json
     "identifierUris": [
         "api://${{BOT_DOMAIN}}/botid-${{BOT_ID}}"
-    ]
+    ],
     ```
 
 1. 在文件中，更新 **oauth2Permissions** 数组以创建范围，允许 Teams 以管理员或用户身份调用 Web API：
@@ -86,7 +86,7 @@ lab:
             "${{AAD_APP_ACCESS_AS_USER_PERMISSION_ID}}"
           ]
         }
-      ]
+      ],
     ```
 
 1. 保存所做的更改
@@ -96,13 +96,13 @@ lab:
 在 Visual Studio 中继续操作：
 
 1. 在 **appPackage** 文件夹中，打开名为 **manifest.json** 的文件
-1. 在  文件中添加以下代码：
+1. 在文件中，在**说明**后面添加以下代码：
 
     ```json
     "webApplicationInfo": {
       "id": "${{BOT_ID}}",
       "resource": "api://${{BOT_DOMAIN}}/botid-${{BOT_ID}}"
-    }
+    },
     ```
 
 1. 保存所做的更改
@@ -114,7 +114,7 @@ lab:
 在 Visual Studio 中继续操作：
 
 1. 在 **infra\entra** 文件夹中，创建名为 **entra.graph.manifest.json** 的文件
-2. 在  文件中添加以下代码：
+2. 在文件中，添加以下代码：
 
     ```json
     {
@@ -199,7 +199,7 @@ Azure AI 机器人服务连接设置用于管理机器人和消息扩展中的�
 在 Visual Studio 中继续操作：  
 
 1. 在 **env** 文件夹中，打开 **.env.local**
-1. 在  文件中添加以下代码：
+1. 在文件中，添加以下代码：
 
     ```text
     CONNECTION_NAME=MicrosoftGraph
@@ -500,7 +500,7 @@ private static async Task<MessagingExtensionResponse> CreateAuthResponse(UserTok
 
 在 Visual Studio 中继续操作：
 
-1. 在**解决方案资源管理器**中，右键单击 **MsgExtProductSupport** 项目
+1. 在“解决方案资源管理器”**** 中，右键单击 TeamsApp**** 项目。
 1. 展开 **Teams 工具包**菜单，选择 **“准备 Teams 应用依赖项”**
 1. 在**Microsoft 365 帐户**对话框中，选择“继续”****
 1. 在**预配**对话框中，选择“预配”****
@@ -519,20 +519,15 @@ private static async Task<MessagingExtensionResponse> CreateAuthResponse(UserTok
 1. 在浏览器中，如有必要，输入Microsoft 365 帐户凭据，然后继续 Microsoft Teams。
 1. 在应用安装对话框中，选择 **“添加”**
 1. 打开新的或现有的 Microsoft Teams 聊天
-1. 在消息撰写区域中，选择 **“...”** 打开应用浮出控件
+1. 在消息撰写区域中，选择 **...** 打开应用浮出控件
 1. 在应用列表中，选择 **“Contoso 产品”**，以打开消息扩展
 1. 在文本框中，输入 **Bot Builder** 以开始搜索
-1. 在结果列表中，**选择要将卡片嵌入撰写消息框中的结果**
 1. 显示一条消息，**需要登录才能使用此应用**
 1. 选择“登录链接”****，打开新选项卡并启动身份验证流
-1. 在“权限许可”页面，查看所请求的权限
-1. 选择“接受”**，关闭选项卡并返回 Microsoft Teams
-1. 在消息撰写区域中，选择 **“...”** 打开应用浮出控件
-1. 在应用列表中，选择 **“Contoso 产品”**，以打开消息扩展
-1. 在文本框中，输入 **Bot Builder** 以开始搜索
-1. 系统会提示你再次登录。 再次按照**登录链接**开始搜索。
-1. 在结果列表中，**选择要将卡片嵌入撰写消息框中的结果**
+1. 在“权限许可”页面，查看所请求的权限。
+1. 选择“接受”****，关闭选项卡并返回 Microsoft Teams
+1. 在结果列表中，**选择要将卡片嵌入撰写消息框中的结果**并发送。
 
 关闭浏览器，以停止调试会话。
 
-[继续进行下一个练习...](./4-exercise-retrieve-product-information-from-sharepoint-online.md)
+[继续下一个练习...](./4-exercise-retrieve-product-information-from-sharepoint-online.md)
