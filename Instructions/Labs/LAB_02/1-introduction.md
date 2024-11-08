@@ -1,24 +1,29 @@
 ---
 lab:
   title: 简介
-  module: 'LAB 02: Integrate external content with Copilot for Microsoft 365 using Microsoft Graph connectors built with .NET'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
 ---
 
-# 简介
+# 介绍
 
-假设你有一个存储知识库文章的外部系统。 这些文章包含组织中不同流程的信息。 你希望能够从 Microsoft 365 中轻松查找和发现相关信息。 你还希望适用于 Microsoft 365 的 Copilot 在其响应中包含来自这些知识库文章的信息。
+在此项目中，你将了解在适用于 Microsoft 365 的 Microsoft Copilot 中如何将 Teams 消息扩展用作插件。 该项目基于同一 GitHub 存储库[](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-northwind-inventory-ts)中包含的“Northwind Inventory”示例。 通过使用成熟的 [Northwind 数据库](https://learn.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases)，你将拥有大量的模拟企业数据可供使用。
 
-若要在 Microsoft 365 中公开此外部信息，你将生成自定义 Microsoft Graph 连接器。 Microsoft Graph 连接器连接到外部系统（1）以检索内容，使用来自 Microsoft Entra ID 的信息通过 Microsoft 365 进行身份验证，（2）并使用 Microsoft Graph API 将内容导入到 Microsoft 365。
+Northwind 在华盛顿州斯波坎市经营一家特色食品电子商务公司。 在本实验室中，你将使用 Northwind Inventory 应用程序，该应用程序提供对产品库存和财务信息的访问权限。
 
-:::image type="content" source="../media/1-graph-connector-concept.png" alt-text="显示 Microsoft Graph 连接器的概念工作的示意图。":::
+完成此练习大约需要 60 分钟。
 
-在本模块中，你了解了什么是 Microsoft Graph 连接器，以及为何应考虑在组织中使用这些连接器。 你生成了 Microsoft Graph 连接器，它可以将本地 Markdown 文件导入到 Microsoft 365 中。 你还了解了如何确保只有具有适当分配权限的个人才能访问导入的外部内容。 最后，优化 Microsoft Graph 连接器，以便与适用于 Microsoft 365 的 Copilot 一起使用。
+## 准备工作
 
-## 先决条件
+- 首先通过设置开发环境并让应用程序运行来[**做好准备**](./2-prepare-development-environment.md)。
 
-- C# 基础知识
-- 身份验证基础知识
-- [Microsoft 365 开发人员租户](https://developer.microsoft.com/microsoft-365/dev-program?ocid=MSlearn)的访问权限
-- [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
+- 在练习 1 [****](./3-exercise-1-run-message-extension.md)中，你将在 Microsoft Teams 和 Outlook 中运行与 消息扩展[](https://learn.microsoft.com/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)相同的应用程序。
 
-准备好开始时，[继续下一个练习...](./2-exercise-configure-connection-schema.md)
+- 在练习 2[****](./4-exercise-2-run-copilot-plugin.md) 中，你将运行应用程序作为适用于 Microsoft 365 的 Copilot 的插件。 你将尝试各种提示，并观察如何使用不同的参数调用插件。 与 Copilot 聊天时，可以观看开发人员控制台来查看其生成的查询。
+
+- 在练习 3[****](./5-exercise-3-add-new-command.md) 中，你将了解如何向应用程序添加新命令，以便扩展插件功能并执行更多任务。
+
+  ![显示产品的自适应卡片的屏幕截图。](../media/1-00-product-card-only.png)
+
+- 最后，在练习 4 中[****](./6-exercise-4-explore-plugin-source-code.md)，你将浏览代码，以更深入地了解其工作原理。 如果还没有 Copilot，其他所有内容仍将用作 Microsoft 365 的消息扩展。
+
+准备好开始时，[继续下一个练习...](./2-prepare-development-environment.md)

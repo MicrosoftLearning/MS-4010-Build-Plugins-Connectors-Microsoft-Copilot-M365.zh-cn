@@ -1,4 +1,4 @@
-# INF99X：示例课程
+# MS-4010：针对适用于 Microsoft 365 的 Copilot 生成插件和连接器
 
 **你是 MCT 吗？** - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 
