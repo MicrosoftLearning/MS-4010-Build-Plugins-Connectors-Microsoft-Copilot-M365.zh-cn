@@ -1,14 +1,14 @@
 ---
 lab:
-  title: 练习 4 - 扩展和优化消息扩展以与适用于 Microsoft 365 的 Copilot 一起使用
-  module: 'LAB 01: Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  title: 练习 4 - 扩展和优化消息扩展以与Microsoft 365 Copilot 一起使用
+  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
 ---
 
-# 练习 4 - 扩展和优化消息扩展以与适用于 Microsoft 365 的 Copilot 一起使用
+# 练习 4 - 扩展和优化消息扩展以与Microsoft 365 Copilot 一起使用
 
-在本练习中，你将扩展和优化消息扩展，以便与适用于 Microsoft 365 的 Copilot 一起使用。 添加名为“目标受众”的新参数，并更新消息扩展逻辑以处理多个参数。 最后，运行并调试消息扩展，并在 Microsoft Teams 的 Copilot 中对其进行测试。
+在本练习中，你将扩展和优化消息扩展，以便与 Microsoft 365 Copilot 一起使用。 添加名为“目标受众”的新参数，并更新消息扩展逻辑以处理多个参数。 最后，运行并调试消息扩展，并在 Microsoft Teams 的 Copilot 中对其进行测试。
 
-![适用于 Microsoft 365 的 Copilot 中答案的屏幕截图，其中包含消息扩展插件返回的信息。 显示产品信息的自适应卡片。](../media/5-copilot-answer.png)
+![Microsoft 365 Copilot 中答案的屏幕截图，其中包含消息扩展插件返回的信息。 显示产品信息的自适应卡片。](../media/5-copilot-answer.png)
 
 > [!NOTE]
 > 本练习中唯一需要 Microsoft 365 Copilot 许可证的任务是任务 5。 无论租户是否具有 Copilot，都应完成以前的任务。
@@ -212,21 +212,21 @@ TargetAudience**** 参数描述其内容，并说明该参数应接受使用者*
 
 1. 在插件列表中，切换 **Contoso 产品**插件以启用它。
 
-    ![Microsoft Teams 中启用了 Contoso 产品插件的适用于 Microsoft 365 的 Copilot 的屏幕截图。](../media/20-copilot-plugin-enabled.png)
+    ![Microsoft Teams 中启用了 Contoso 产品插件的 Microsoft 365 Copilot 的屏幕截图。](../media/20-copilot-plugin-enabled.png)
 
 1. 输入“**查找面向个人的 Contoso 产品**”作为消息并发送。
 
 1. 等待 Copilot 做出响应：
 
-    ![Microsoft Teams 中适用于 Microsoft 365 的 Copilot 的屏幕截图，其中显示了处理用户请求时显示的助手消息。](../media/21-copilot-thinking.png)
+    ![Microsoft Teams 中 Microsoft 365 Copilot 的屏幕截图，其中显示了处理用户请求时显示的助手消息。](../media/21-copilot-thinking.png)
 
 1. 在 Copilot 响应中，将显示插件响应中返回的数据，以及响应中引用的插件：
 
-    ![适用于 Microsoft 365 的 Copilot 中答案的屏幕截图，其中包含消息扩展插件返回的信息。 显示产品信息的自适应卡片。](../media/5-copilot-answer.png)
+    ![Microsoft 365 Copilot 中答案的屏幕截图，其中包含消息扩展插件返回的信息。 显示产品信息的自适应卡片。](../media/5-copilot-answer.png)
 
 1. 要查看与结果相关的自适应卡片，请将鼠标悬停在 Copilot 响应中的引用上：
 
-    ![Microsoft Teams 中适用于 Microsoft 365 的 Copilot 屏幕截图，其中显示了显示产品信息的自适应卡片。 当用户将鼠标悬停在 Copilot 响应中的引用上时，将显示卡片。](../media/22-copilot-reference.png)
+    ![Microsoft Teams 中 Microsoft 365 Copilot 的屏幕截图，其中显示了显示产品信息的自适应卡片。 当用户将鼠标悬停在 Copilot 响应中的引用上时，将显示卡片。](../media/22-copilot-reference.png)
 
 返回到 Visual Studio，然后从工具栏中选择“**停止**”，或按 <kbd>Shift</kbd> + <kbd>F5</kbd> 停止调试会话。 同时，使用 <kbd>Ctrl</kbd> + <kbd>C</kbd> 关闭 Dev Proxy。
 

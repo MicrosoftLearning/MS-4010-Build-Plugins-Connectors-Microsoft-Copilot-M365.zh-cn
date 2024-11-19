@@ -1,7 +1,7 @@
 ---
 lab:
   title: 练习 2 - 添加单一登录
-  module: 'LAB 01: Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
 ---
 
 # 练习 2 - 添加单一登录
@@ -244,7 +244,7 @@ lab:
 
 1. 在 **Search** 文件夹中，打开 **SearchApp.cs**。
 
-1. 在 **SearchApp** 类的开头，创建接受 **IConfiguration** 对象的构造函数，并将 **CONNECTION_NAME** 属性的值分配给名为 **connectionName** 的专用字段：
+1. 在 **SearchApp** 类的开头（大约第 14 行），创建接受 **IConfiguration** 对象的构造函数，并将 **CONNECTION_NAME** 属性的值分配给名为 **connectionName** 的专用字段：
 
     ```csharp
     private readonly string connectionName;

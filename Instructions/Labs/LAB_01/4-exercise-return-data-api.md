@@ -1,7 +1,7 @@
 ---
 lab:
   title: 练习 3 - 从 Microsoft Entra 保护的 API 返回产品数据
-  module: 'LAB 01: Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
 ---
 
 # 练习 3 - 从 Microsoft Entra 保护的 API 返回产品数据

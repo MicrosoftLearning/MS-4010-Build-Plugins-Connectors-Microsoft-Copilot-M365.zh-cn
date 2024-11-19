@@ -1,7 +1,7 @@
 ---
 lab:
   title: 准备开发环境
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # 准备开发环境
@@ -11,7 +11,7 @@ lab:
 ## 任务 1 - 安装必备组件
 
 > [!IMPORTANT]
-> 若要成功完成此项目，需要具有上传应用程序权限的 Microsoft 365 帐户。 若要完成**练习 2**，该帐户还必须获得适用于 Microsoft 365 的 Microsoft Copilot 的许可。
+> 若要成功完成此项目，需要具有上传应用程序权限的 Microsoft 365 帐户。 若要完成**练习 2**，该帐户还必须获得 Microsoft 365 Copilot 的许可。
 
 如果使用的是新租户，最好在开始前先登录 [Microsoft 365 页面](https://office.com)，网址为 [https://office.com](https://office.com)。 根据租户的配置方式，可能会要求你设置多重身份验证。 在继续操作之前，请确保可以访问 Microsoft Teams 和 Microsoft Outlook。
 
