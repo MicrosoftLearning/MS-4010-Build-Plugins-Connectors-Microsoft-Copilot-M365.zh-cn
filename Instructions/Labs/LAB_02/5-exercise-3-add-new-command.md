@@ -1,12 +1,12 @@
 ---
 lab:
   title: 练习 3 - 添加新命令
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # 练习 3 - 添加新命令
 
-在本练习中，你将通过添加新命令来增强 Teams 消息扩展和 Copilot 插件。 虽然当前消息扩展有效地提供有关 Northwind 库存数据库中产品的信息，但它不提供与 Northwind 客户相关的信息。 你将引入一个与 API 调用关联的新命令，用于检索按用户指定的客户名称订购的产品。 本练习假设你已完成至少练习 1、2 和 3。 如果没有适用于 Microsoft 365 的 Copilot 许可证，则可以跳过练习 4。
+在本练习中，你将通过添加新命令来增强 Teams 消息扩展和 Copilot 插件。 虽然当前消息扩展有效地提供有关 Northwind 库存数据库中产品的信息，但它不提供与 Northwind 客户相关的信息。 你将引入一个与 API 调用关联的新命令，用于检索按用户指定的客户名称订购的产品。 本练习假设你已完成至少练习 1、2 和 3。 如果没有 Microsoft 365 Copilot 许可证，则可以跳过练习 4。
 
 我们将通过以下任务来完成此操作：
 
@@ -232,7 +232,7 @@ lab:
 
 ## 任务 5：运行应用！ 按公司名称搜索产品
 
-现在，你已准备好将示例作为适用于 Microsoft 365 的 Copilot 插件进行测试。
+现在，已准备好将示例作为 Microsoft 365 Copilot 插件进行测试。
 
 1. 删除 Teams 中的 **Northwest Inventory **应用。 此任务是必需的，因为要更新清单。 清单更新要求重新安装应用。 执行此操作的最直接方法是首先将其从 Teams 中删除。
 

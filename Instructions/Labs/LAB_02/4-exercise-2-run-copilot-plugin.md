@@ -1,17 +1,17 @@
 ---
 lab:
   title: 练习 2 - 以 Copilot 插件的形式运行示例
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # 练习 2 - 以 Copilot 插件的形式运行示例
 
-在本练习中，将应用程序作为适用于 Microsoft 365 的 Microsoft Copilot 的插件运行。 你将尝试各种提示，并观察如何使用不同的参数调用插件。
+在本练习中，将应用程序作为 Microsoft 365 Copilot 的插件运行。 你将尝试各种提示，并观察如何使用不同的参数调用插件。
 
 > [!NOTE]  
-> 若要执行以下练习，你的帐户必须具有适用于 Microsoft 365 的 Copilot 的有效许可证。
+> 若要执行以下练习，帐户必须具有 Microsoft 365 Copilot 的有效许可证。
 
-## 任务 1 - 在 适用于 Microsoft 365 的 Microsoft Copilot 中进行测试（单个参数）
+## 任务 1 - 在 Microsoft 365 Copilot 中进行测试（单个参数）
 
 1. 在左侧的应用程序栏上，选择 **Copilot** 应用。
 
@@ -45,7 +45,7 @@ lab:
 
 可以随意尝试编写自己的提示。 你会发现，仅当 Copilot 能够查询插件以获取所需信息时，它们才起作用。 这强调了需要预测用户将发出的提示类型，并为每个提示提供相应的查询类型。 具有多个参数将使此功能更加强大！
 
-## 任务 2 - 在 适用于 Microsoft 365 的 Microsoft Copilot 中进行测试（多个参数）
+## 任务 2 - 在 Microsoft 365 Copilot 中进行测试（多个参数）
 
 在本练习中，你将尝试一些在示例插件中练习多参数功能的提示。 这些提示将请求按**应用清单**中定义的**名称**、**类别**、**库存状态**、**供应商城市**和**库存级别**检索的数据。
 
@@ -111,7 +111,7 @@ lab:
 
 ## 检查你的工作
 
-完成本练习中的任务后，你应该能够在适用于 Microsoft 365 的 Copilot 中使用 **Northwind Inventory** 插件。 
+完成本练习中的任务后，你应该能够在 Microsoft 365 Copilot 中使用 **Northwind Inventory** 插件。 
 
 完成该练习后，即可向消息扩展添加新命令，以便扩展插件功能并执行更多任务。 
 

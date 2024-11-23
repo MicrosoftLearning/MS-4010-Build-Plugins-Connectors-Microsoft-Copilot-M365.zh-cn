@@ -1,7 +1,7 @@
 ---
 lab:
   title: 练习 1 - 将示例作为消息扩展运行
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # 练习 1 - 将示例作为消息扩展运行
@@ -234,6 +234,6 @@ Northwind 数据库并不花哨，但它是真实的！ 如果要查看甚至修
 
 完成本练习中的所有任务后，你应该有一个可运行的消息扩展应用程序，可用作适用于 Teams 或 Outlook 的 Microsoft 365 插件。
 
-一切正常时，即可在适用于 **Microsoft 365 的 Microsoft Copilot** 中运行示例应用程序！ 
+一切正常后，即可在 **Microsoft 365 Copilot** 中运行示例应用程序！ 
 
 [继续下一个练习...](./4-exercise-2-run-copilot-plugin.md)
