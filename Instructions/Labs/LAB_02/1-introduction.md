@@ -1,29 +1,34 @@
 ---
 lab:
   title: 简介
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
+  module: 'LAB 02: Build your first action for declarative agents with API plugin by using Visual Studio Code'
 ---
 
-# 介绍
+# 简介
 
-在此项目中，你将了解在 Microsoft 365 Copilot 中如何将 Teams 消息扩展用作插件。 该项目基于同一 GitHub 存储库[](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-northwind-inventory-ts)中包含的“Northwind Inventory”示例。 通过使用成熟的 [Northwind 数据库](https://learn.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases)，你将拥有大量的模拟企业数据可供使用。
+Microsoft 365 Copilot 代理允许创建针对特定应用场景优化的 AI 支持的助手。 使用说明定义代理的上下文，并指定语音的音调或响应方式等设置。 配置代理的技能后，可以与外部系统交互、在系统条件下触发某些行为或使用自定义工作流逻辑。 一种类型的技能是允许声明性代理与 API 通信以检索和修改数据的操作。
 
-Northwind 在华盛顿州斯波坎市经营一家特色食品电子商务公司。 在本实验室中，你将使用 Northwind Inventory 应用程序，该应用程序提供对产品库存和财务信息的访问权限。
+![显示对 Microsoft 365 Copilot 声明性代理进行剖析的关系图。](../media/LAB_02/1-anatomy-declarative-agent.png)
 
-完成此练习大约需要 60 分钟。
+## 示例方案
 
-## 准备工作
+假设你受雇于某个组织，在此期间你经常从当地餐厅订购食物。 餐厅使用的每日菜单已发布到互联网上。 你希望能够快速查看提供哪些菜品，但同时要考虑过敏原，以防你有客人。 餐厅通过 API 公开其菜单。 你希望将信息集成到 Microsoft 365 Copilot 中，而不是生成单独的应用，以便可以轻松查找可以订购的菜肴并弄清楚其原料。 你希望使用自然语言浏览菜单并下订单。
 
-- 首先通过设置开发环境并让应用程序运行来[**做好准备**](./2-prepare-development-environment.md)。
+## 我们将执行哪些操作？
 
-- 在练习 1 [****](./3-exercise-1-run-message-extension.md)中，你将在 Microsoft Teams 和 Outlook 中运行与 消息扩展[](https://learn.microsoft.com/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)相同的应用程序。
+在本模块中，你将使用 API 插件为声明性代理生成操作。 该操作允许代理使用其匿名 API 与外部系统交互。 学习内容：
 
-- 在[**练习 2**](./4-exercise-2-run-copilot-plugin.md) 中，将把应用程序作为 Microsoft 365 Copilot 的插件运行。 你将尝试各种提示，并观察如何使用不同的参数调用插件。 与 Copilot 聊天时，可以观看开发人员控制台来查看其生成的查询。
+- **创建**：创建连接到匿名 API 的 API 插件。
+- **配置**：配置 API 插件以显示 API 中的数据。
+- **扩展**：使用 API 插件通过操作扩展声明性代理。
+- **预配**：将声明性代理上传到 Microsoft 365 Copilot 并验证结果。
 
-- 在练习 3[****](./5-exercise-3-add-new-command.md) 中，你将了解如何向应用程序添加新命令，以便扩展插件功能并执行更多任务。
+![声明性代理的屏幕截图，该代理使用外部 API 中的信息响应用户。](../media/LAB_02/1-agent-response-api-plugin.png)
 
-  ![显示产品的自适应卡片的屏幕截图。](../media/1-00-product-card-only.png)
+## 实验室用时
 
-- 最后，在练习 4 中[****](./6-exercise-4-explore-plugin-source-code.md)，你将浏览代码，以更深入地了解其工作原理。 如果还没有 Copilot，其他所有内容仍将用作 Microsoft 365 的消息扩展。
+- **估计完成时间**：35 分钟
 
-准备好开始时，[继续下一个练习...](./2-prepare-development-environment.md)
+## 学习目标
+
+本模块结束时，你将了解如何将声明性代理与连接到匿名 API 的 API 插件集成，以便实时与外部系统交互。
