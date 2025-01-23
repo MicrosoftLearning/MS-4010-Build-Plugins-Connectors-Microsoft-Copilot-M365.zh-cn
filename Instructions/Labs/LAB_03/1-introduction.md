@@ -1,29 +1,32 @@
 ---
 lab:
   title: 简介
-  module: 'LAB 03: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 03: Use Adaptive Cards to show data in API plugins for declarative agents'
 ---
 
 # 简介
 
-在此项目中，你将了解在适用于 Microsoft 365 的 Microsoft Copilot 中如何将 Teams 消息扩展用作插件。 该项目基于同一 GitHub 存储库[](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-northwind-inventory-ts)中包含的“Northwind Inventory”示例。 通过使用成熟的 [Northwind 数据库](https://learn.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases)，你将拥有大量的模拟企业数据可供使用。
+通过使用操作扩展声明性代理，可以通过其 API 将其连接到外部系统和服务。 将代理连接到现有系统有助于自动执行任务，并使用自然语言获取见解。 为了改善用户体验，可以使用自适应卡片，以具有视觉吸引力的方式呈现代理从 API 检索的信息。
 
-Northwind 在华盛顿州斯波坎市经营一家特色食品电子商务公司。 在本实验室中，你将使用 Northwind Inventory 应用程序，该应用程序提供对产品库存和财务信息的访问权限。
+## 示例方案
 
-完成此练习大约需要 60 分钟。
+假设你最近构建了一个声明性代理，该代理与本地餐馆的 API 集成。 使用代理，你可以浏览今天的菜单，并使用自然语言下订单。 餐厅的 API 提供了详细的菜肴列表、成分和过敏原。 你希望通过使用自适应卡片呈现有关菜肴的信息，从而增强代理的响应。 你还希望使用自适应卡片呈现订单摘要，以提供订单的视觉表示形式。 通过使用自适应卡片，可以包括图像、文本和按钮，使信息更具吸引力。
 
-## 准备工作
+## 我们将执行哪些操作？
 
-- 首先通过设置开发环境并让应用程序运行来[**做好准备**](./2-prepare-development-environment.md)。
+在本模块中，将扩展声明性代理的现有 API 插件，以呈现其使用自适应卡片从 API 接收的信息。 学习内容：
 
-- 在练习 1 [****](./3-exercise-1-run-message-extension.md)中，你将在 Microsoft Teams 和 Outlook 中运行与 消息扩展[](https://learn.microsoft.com/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)相同的应用程序。
+- **创建**：创建一个自适应卡片模板，用于显示 API 中的数据。
+- **验证**：验证自适应卡片模板是否正确呈现 API 数据。
+- **配置**：配置 API 插件以使用自适应卡片模板呈现数据。
+- **预配**：将声明性代理上传到 Microsoft 365 Copilot 并验证结果。
 
-- 在练习 2[****](./4-exercise-2-run-copilot-plugin.md) 中，你将运行应用程序作为适用于 Microsoft 365 的 Copilot 的插件。 你将尝试各种提示，并观察如何使用不同的参数调用插件。 与 Copilot 聊天时，可以观看开发人员控制台来查看其生成的查询。
+![声明性代理的屏幕截图，该代理使用自适应卡片通过外部 API 中的信息响应用户。](../media/LAB_03/1-agent-response-adaptive-card-dish.png)
 
-- 在练习 3[****](./5-exercise-3-add-new-command.md) 中，你将了解如何向应用程序添加新命令，以便扩展插件功能并执行更多任务。
+## 实验室用时
 
-  ![显示产品的自适应卡片的屏幕截图。](../media/1-00-product-card-only.png)
+- **估计完成时间**：35 分钟
 
-- 最后，在练习 4 中[****](./6-exercise-4-explore-plugin-source-code.md)，你将浏览代码，以更深入地了解其工作原理。 如果还没有 Copilot，其他所有内容仍将用作 Microsoft 365 的消息扩展。
+## 学习目标
 
-准备好开始时，[继续下一个练习...](./2-prepare-development-environment.md)
+在本模块结束时，将知道如何构建与声明性代理一起使用的自适应卡片模板。 可以验证模板是否正确呈现数据，并将 API 插件配置为使用模板。

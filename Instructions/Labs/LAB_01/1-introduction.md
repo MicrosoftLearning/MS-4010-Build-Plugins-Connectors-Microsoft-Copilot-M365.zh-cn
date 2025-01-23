@@ -1,59 +1,43 @@
 ---
 lab:
   title: 简介
-  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  module: 'LAB 01: Build a declarative agent for Microsoft 365 Copilot using Visual Studio Code'
 ---
 
-# 介绍
+# 简介
 
-消息扩展允许用户使用来自 Microsoft Teams 和 Microsoft Outlook 的外部系统。 用户可以使用消息扩展来查找和更改数据，并在消息和电子邮件中以格式丰富的卡片形式共享来自这些系统的数据。
+声明性代理可用于扩展 Microsoft 365 Copilot。 定义自定义知识，以创建可以使用权威内容回答问题的代理。
 
-假设你有一个自定义 API，用于访问与组织相关的最新产品信息。 想要跨 Microsoft 365 搜索和共享此信息。 还希望 Microsoft 365 Copilot 在其答案中使用此信息。
+## 示例方案
 
-在本模块中，将创建消息扩展。 消息扩展使用机器人与 Microsoft Teams、Microsoft Outlook 和 Microsoft 365 Copilot 进行通信。
+假设你在客户支持团队工作。 你和你的团队处理有关组织从客户生产的产品的查询。 你想要改进响应时间并提供更好的体验。 你将文档存储在 SharePoint Online 网站上的文档库中，其中包含产品规格、常见问题，以及用于处理维修、退货和保修的各种策略。 你希望能够使用自然语言来查询这些文档中的信息，并快速获取客户查询的答案。
 
-![Microsoft Teams 中基于搜索的消息扩展返回的搜索结果屏幕截图。](../media/1-search-results.png)
+## 我们将执行哪些操作？
 
-它使用 Microsoft Entra 对用户进行身份验证，这样就能代表用户从 API 返回数据。
+在这里，将创建一个声明性代理，该代理可以使用存储在 Microsoft 365 的文档中的信息来回答产品支持问题：
 
-用户进行身份验证后，消息扩展将从 API 获取数据，并返回搜索结果，这些搜索结果可以作为格式丰富的卡片嵌入到消息和电子邮件中，然后进行共享。
-
-![Microsoft Teams 中使用外部 API 中数据的搜索结果的屏幕截图。](../media/3-search-results-api.png)
-
-![Microsoft Teams 中嵌入消息中的搜索结果的屏幕截图。](../media/4-adaptive-card.png)
-
-它与 Microsoft 365 Copilot 作为插件一起使用，使其能够代表用户查询产品数据，并在其答案中使用返回的数据。
-
-![Microsoft 365 Copilot 中答案的屏幕截图，其中包含消息扩展插件返回的信息。 显示产品信息的自适应卡片。](../media/5-copilot-answer.png)
-
-在本模块结束时，可以创建用 C# 编写的消息扩展（在 .NET 上运行）。 可用于 Microsoft Teams、Microsoft Outlook 和 Microsoft 365 Copilot。 可以在受保护的 API 后面查询数据，并将结果作为格式丰富的卡片返回。
+- **创建**：在 Visual Studio Code 中创建声明性代理项目，并使用 Teams 工具包。
+- **自定义指令**：通过定义自定义指令来形成响应。
+- **自定义上下文关联**：通过配置上下文关联数据，向代理添加额外的上下文。
+- **对话开场白**：定义启动新对话的提示。
+- **预配**：将声明性代理上传到 Microsoft 365 Copilot 并验证结果。
 
 ## 先决条件
 
-- C# 基础知识
-- Bicep 基础知识
-- 身份验证基础知识
-- 对 Microsoft 365 租户的管理员访问权限。
-- 可访问 Azure 订阅
-- Microsoft 365 的 Copilot 访问权限是可选的，只需完成**练习 4：任务 5** 即可。
-- 安装了 [Teams 工具包](/microsoftteams/platform/toolkit/toolkit-v4/teams-toolkit-fundamentals-vs) 的 Visual Studio 2022 17.10+（Microsoft Teams 开发工具组件）
-- [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Dev Proxy 0.19.1+](https://aka.ms/devproxy)
-
-> [!NOTE]
-> 此实验室中唯一需要 Microsoft 365 Copilot 许可证的练习是**练习 4：任务 5**。 无论租户是否具有 Copilot，都应完成该时间点之前的一切内容。
+- Microsoft 365 Copilot 的基本知识及其工作原理
+- Microsoft 365 Copilot 的声明性代理的基础知识
+- 使用 Microsoft 365 Copilot 的 Microsoft 365 租户
+- 有权将自定义应用上传到 Microsoft Teams 的帐户
+- 使用 Microsoft 365 Copilot 访问 Microsoft 365 租户
+- 安装了 [Teams 工具包](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)扩展的 [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js v18](https://nodejs.org/en/download/package-manager)
 
 ## 实验室用时
 
-  - **估计完成时间：** 150 分钟
+- **估计完成时间：** 30 分钟
 
 ## 学习目标
 
-学完本模块后，你应该能够：
+在本模块结束时，可以创建声明性代理，将其上传到 Microsoft 365，然后在 Microsoft 365 Copilot 中使用它来验证结果。
 
-- 了解什么是消息扩展以及如何生成消息扩展。
-- 创建一个消息扩展。
-- 了解如何使用单一登录对用户进行身份验证，并调用受 Microsoft Entra 身份验证保护的自定义 API。
-- 了解如何扩展和优化消息扩展以与 Microsoft 365 Copilot 一起使用。
-
-准备好开始时，[继续第一个练习...](./2-exercise-create-a-message-extension.md)
+准备好开始时，[继续第一个练习...](./2-exercise-create-declarative-agent.md)
