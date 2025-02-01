@@ -114,7 +114,7 @@ lab:
 
 在 Web 浏览器中继续操作：
 
-1. 在 **Microsoft 365 Copilot** 中，选择右上角的图标以展开 **Copilot 侧面板**。
+1. 在 **Microsoft 365 Copilot** 中，选择右上角的图标以**展开 Copilot 侧面板**。
 1. 在代理列表中查找“**产品支持**”并选择它，以输入沉浸式体验，直接与代理聊天。 请注意，在清单中定义的对话开场白已显示在用户界面中。
 
 ![Microsoft Edge 的屏幕截图，其中显示了在沉浸式体验中使用自定义对话开场白的产品支持声明性代理。](../media/LAB_01/test-conversation-starters.png)

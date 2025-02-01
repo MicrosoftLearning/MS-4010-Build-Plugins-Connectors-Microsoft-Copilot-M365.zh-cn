@@ -44,7 +44,7 @@ lab:
 1. 在继续之前，在活动栏的“**扩展**”选项卡中，搜索并安装“**自适应卡片预览器**”扩展，然后为自适应卡片创建数据文件：
   1. 按键盘上的 <kbd>CTRL</kbd>+<kbd>P</kbd> 键，打开命令面板。 键入 `>Adaptive` 以查找与使用自适应卡片相关的命令。
 
-    ![Visual Studio Code 的屏幕截图，其中显示与使用自适应卡片相关的命令。](../media/LAB_03/LAB_03/3-visual-studio-code-adaptive-card-commands.png)
+    ![Visual Studio Code 的屏幕截图，其中显示与使用自适应卡片相关的命令。](../media/LAB_03/3-visual-studio-code-adaptive-card-commands.png)
 
   1. 从列表中选择“**自适应卡片：新建数据文件**”。 在 Visual Studio Code 中，创建名为 **dish.data.json** 的新文件。
   1. 将其内容替换为表示菜肴的数据：
@@ -68,7 +68,7 @@ lab:
 1. 返回到 **dish.json** 文件。
 1. 从可重用功能区中选择“**预览自适应卡片**”。
 
-  ![Visual Studio Code 的屏幕截图，其中显示自适应卡片预览。](../media/LAB_03/LAB_03/3-visual-studio-code-adaptive-card-preview.png)
+  ![Visual Studio Code 的屏幕截图，其中显示自适应卡片预览。](../media/LAB_03/3-visual-studio-code-adaptive-card-preview.png)
 
   Visual Studio Code 将卡片预览打开到一侧。 编辑卡片时，更改将立即显示在一侧。
 
