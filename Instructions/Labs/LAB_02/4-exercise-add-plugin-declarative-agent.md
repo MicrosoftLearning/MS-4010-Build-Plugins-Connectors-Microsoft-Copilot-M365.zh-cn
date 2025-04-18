@@ -59,7 +59,7 @@ lab:
 1. 更新声明性代理信息：
     1. 打开 **appPackage/declarativeAgent.json** 文件。
     1. 将 **name** 属性的值更新为 **Il Ristorante**。
-    1. 将 **description** 属性的值更新为“**从舒适的办公桌上订购最美味的意大利菜肴和饮料**”。
+    1. 将 **description** 属性的值更新为“**在舒适的办公桌上订购最美味的意大利菜肴和饮料**”。
     1. 保存更改。
 1. 更新声明性代理的指令：
     1. 打开 **appPackage/instruction.txt** 文件。
@@ -122,6 +122,7 @@ lab:
     > 若要保留格式，在复制到 Visual Studio Code 之前，可能需要在记事本中执行多个复制/粘贴操作。
 
     1. 保存更改。
+
 1. 若要帮助用户，请了解他们可以使用代理的内容，添加对话开场白：
     1. 打开 **appPackage/declarativeAgent.json** 文件。
     1. 在 **instructions** 属性之后，添加名为 **conversation_starters**的新属性：
