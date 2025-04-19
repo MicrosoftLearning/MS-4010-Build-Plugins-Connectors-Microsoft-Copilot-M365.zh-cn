@@ -22,12 +22,12 @@ lab:
    ```json
    "conversation_starters": [
        {
-           "title": "Product information",
-           "text": "Tell me about Eagle Air"
+           "title": "Microsoft 365",
+           "text": "Tell me about Microsoft 365"
        },
        {
-           "title": "Returns policy",
-           "text": "What is the returns policy?"
+           "title": "Licensing",
+           "text": "What licenses are available for Microsoft 365?"
        },
        {
            "title": "Product information",
@@ -36,10 +36,6 @@ lab:
        {
            "title": "Product troubleshooting",
            "text": "I'm having trouble with a product. Can you help me troubleshoot the issue?"
-       },
-       {
-           "title": "Repair information",
-           "text": "Can you provide information on how to get a product repaired?"
        },
        {
            "title": "Contact support",
@@ -55,68 +51,61 @@ lab:
 ```json
 {
   "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
-  "version": "v1.0",
-  "name": "Product support",
-  "description": "Product support agent that can help answer customer queries about Contoso Electronics products",
-  "instructions": "$[file('instruction.txt')]",
-  "capabilities": [
-    {
-      "name": "OneDriveAndSharePoint",
-      "items_by_url": [
+    "version": "v1.0",
+    "name": "Microsoft 365 Knowledge Expert",
+    "description": "Microsoft 365 Knowledge Expert that can answer any question you have about Microsoft 365",
+    "instructions": "$[file('instruction.txt')]",
+    "capabilities": [
         {
-          "url": "https://{tenant}-my.sharepoint.com/personal/{user}/Documents/Products"
+            "name": "WebSearch",
+            "sites": [
+                {
+                    "url": "https://learn.microsoft.com/microsoft-365/"
+                }
+            ]
         }
-      ]
-    }
-  ],
+    ],
   "conversation_starters": [
-    {
-      "title": "Product information",
-      "text": "Tell me about Eagle Air"
-    },
-    {
-      "title": "Returns policy",
-      "text": "What is the returns policy?"
-    },
-    {
-      "title": "Product information",
-      "text": "Can you provide information on a specific product?"
-    },
-    {
-      "title": "Product troubleshooting",
-      "text": "I'm having trouble with a product. Can you help me troubleshoot the issue?"
-    },
-    {
-      "title": "Repair information",
-      "text": "Can you provide information on how to get a product repaired?"
-    },
-    {
-      "title": "Contact support",
-      "text": "How can I contact support for help?"
-    }
+       {
+           "title": "Microsoft 365",
+           "text": "Tell me about Microsoft 365"
+       },
+       {
+           "title": "Licensing",
+           "text": "What licenses are available for Microsoft 365?"
+       },
+       {
+           "title": "Product information",
+           "text": "Can you provide information on a specific product?"
+       },
+       {
+           "title": "Product troubleshooting",
+           "text": "I'm having trouble with a product. Can you help me troubleshoot the issue?"
+       },
+       {
+           "title": "Contact support",
+           "text": "How can I contact support for help?"
+       }
   ]
 }
 ```
 
-## 任务 2 - 在 Microsoft 365 Copilot 中测试声明性代理
+## 任务 2 - 在智能 Microsoft 365 Copilot 副驾驶® 对话助手中测试声明性代理
 
 接下来，上传更改并启动调试会话。
 
 在 Visual Studio Code 中：
 
 1. 在 **活动栏**中，打开“**Teams 工具包**”扩展。
-1. 在“**生命周期**”部分中，选择“**预配**”。
+1. 在“**生命周期**”部分，选择“**预配**”，然后选择“**发布**”。
+1. **确认**你要向应用程序目录提交更新。
 1. 等待上传完成。
-1. 在“**活动栏**”中，切换到“**运行和调试**”视图。
-1. 选择配置下拉列表旁边的“**开始调试**”按钮，或按 <kbd>F5</kbd>。 将启动新的浏览器窗口并导航到 Microsoft 365 Copilot。
-
-接下来，在 Microsoft 365 中测试声明性代理并验证结果。
 
 在 Web 浏览器中继续操作：
 
 1. 在 **Microsoft 365 Copilot** 中，选择右上角的图标以**展开 Copilot 侧面板**。
 1. 在代理列表中查找“**产品支持**”并选择它，以输入沉浸式体验，直接与代理聊天。 请注意，在清单中定义的对话开场白已显示在用户界面中。
 
-![Microsoft Edge 的屏幕截图，其中显示了在沉浸式体验中使用自定义对话开场白的产品支持声明性代理。](../media/LAB_01/test-conversation-starters.png)
+![Microsoft Edge 的屏幕截图，其中显示在沉浸式体验中使用自定义对话开场白的 Microsoft 365 知识专家声明性代理。](../media/LAB_01/test-conversation-starters.png)
 
 关闭浏览器，停止 Visual Studio Code 中的调试会话。
